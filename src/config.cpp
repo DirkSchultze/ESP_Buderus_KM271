@@ -86,6 +86,7 @@ void configInitValue(){
     snprintf(config.mqtt.topic, sizeof(config.mqtt.topic), "enter MQTT topic...");
     config.mqtt.port = 1883;
     config.mqtt.enable = false;
+    config.mqtt.retain_config_values = false;
 
     // NTP
     snprintf(config.ntp.server, sizeof(config.ntp.server), "de.pool.ntp.org");
@@ -142,6 +143,7 @@ void configSaveToFile() {
     doc["mqtt"]["password"] = config.mqtt.password;
     doc["mqtt"]["topic"] = config.mqtt.topic;
     doc["mqtt"]["port"] = config.mqtt.port;
+    doc["mqtt"]["retain_config_values"]= config.mqtt.retain_config_values;
 
     doc["ntp"]["enable"] = config.ntp.enable;
     doc["ntp"]["server"] = config.ntp.server;
@@ -220,6 +222,7 @@ void configLoadFromFile() {
     snprintf(config.mqtt.password, sizeof(config.mqtt.password), doc["mqtt"]["password"]);
     snprintf(config.mqtt.topic, sizeof(config.mqtt.topic), doc["mqtt"]["topic"]);
     config.mqtt.port = doc["mqtt"]["port"];
+    config.mqtt.retain_config_values= doc["mqtt"]["retain_config_values"];
 
     config.ntp.enable = doc["ntp"]["enable"];
     snprintf(config.ntp.server, sizeof(config.ntp.server), doc["ntp"]["server"]);

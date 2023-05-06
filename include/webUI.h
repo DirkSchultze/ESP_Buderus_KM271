@@ -252,6 +252,7 @@ uint16_t mqtt_enable;
 uint16_t mqtt_server;
 uint16_t mqtt_user;
 uint16_t mqtt_passw;
+uint16_t mqtt_retain_config_values;
 uint16_t mqtt_topic;
 uint16_t mqtt_port;
 uint16_t km271_useHc1;

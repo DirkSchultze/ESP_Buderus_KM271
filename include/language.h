@@ -103,6 +103,7 @@ const char* SERVER[MAX_LANG] =                   {"Server",                     
 const char* TOPIC[MAX_LANG] =                    {"Topic",                                                      "Topic"};
 const char* MQTT[MAX_LANG] =                     {"MQTT",                                                       "MQTT"};
 const char* PORT[MAX_LANG] =                     {"Port",                                                       "Port"};
+const char* RETAIN_CONFIG_VALUES[MAX_LANG]=                    {"Retain Config Values",                                       "Retain config values"};
 const char* NTP[MAX_LANG] =                      {"NTP-Server",                                                 "NTP-Server"};
 const char* NTP_TZ[MAX_LANG] =                   {"Time-Zone",                                                  "Time-Zone"};
 const char* SPRACHE[MAX_LANG] =                  {"Sprache",                                                    "Language"};

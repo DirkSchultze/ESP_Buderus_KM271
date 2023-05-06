@@ -695,6 +695,7 @@ void addSettingsTab(){
   id.settings.mqtt_topic = addTextInputHelper(webText.TOPIC[config.lang], setMqttGroup);
   id.settings.mqtt_user = addTextInputHelper(webText.USER[config.lang], setMqttGroup);
   id.settings.mqtt_passw = addTextInputHelper(webText.PASSWORD[config.lang], setMqttGroup);
+  id.settings.mqtt_retain_config_values = addSwitcherInputHelper(webText.RETAIN_CONFIG_VALUES[config.lang],setMqttGroup);
   ESPUI.setInputType(id.settings.mqtt_passw, "password"); // input control type: password
 
   // NTP-Settings

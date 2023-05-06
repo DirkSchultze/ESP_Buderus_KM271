@@ -42,7 +42,8 @@ typedef struct {
     char password[128];             // MQTT User Password
     char topic[128];                // MQTT Topic Prefix
     uint16_t port = 1883;           // MQTT Server Port
-} s_cfg_mqtt;
+    char retain_config_values;      // MQTT Retain config messages
+    } s_cfg_mqtt;
 
 
 typedef struct {
